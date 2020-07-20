@@ -1,9 +1,11 @@
 import React from 'react';
 
+import Animation1 from "./animations/Animation1";
+
 function App() {
   return (
     <div className="App">
-      Hello World
+      <Animation1 />
     </div>
   );
 }
