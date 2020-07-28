@@ -3,8 +3,9 @@ body {
   color: red;
 }
 
-.svg {
+#svg {
   border: 5px solid green;
+  stroke-width: 10px;
 }
 
 

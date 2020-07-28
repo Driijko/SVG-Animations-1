@@ -3,14 +3,10 @@ import {motion} from "framer-motion";
 
 const svgVariants = {
   initial: {
-    opacity: 0,
-    x: 0,
-    scale: 0
   },
   animate: {
-    opacity: 1,
-    x: [500, 0],
-    scale: [1, 0],
+    translateX: [0, 500],
+    scaleX: [0, 1],
     transition: {
       duration: 2,
       loop: Infinity,
@@ -22,15 +18,12 @@ const svgVariants = {
 export default function Animation2(props) {
   return (
     <div>
-      {/* <motion.div width="200" height="200">
-
-      </motion.div> */}
-      <svg width={`${window.innerWidth}`} height={`${window.innerHeight}`}>
+      <motion.svg width={`${window.innerWidth}`} height={`${window.innerHeight}`}>
         <motion.circle 
-          r="120" cx="225" cy="125" fill="red"
+          r="100" cx="100" cy="100" fill="red"
           variants={svgVariants} initial="initial" animate="animate"
         /> 
-      </svg>
+      </motion.svg>
     </div>
   )
 }
