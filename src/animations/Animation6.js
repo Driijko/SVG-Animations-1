@@ -16,7 +16,7 @@ const svgVariants = {
   }
 }
 
-export default function Animation4(props) {
+export default function Animation6(props) {
   return (
     <div>
       <motion.svg width="500" height="500">

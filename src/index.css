@@ -4,8 +4,8 @@ body {
 }
 
 svg {
-  border: 5px solid green;
-  stroke-width: 10px;
+  /* border: 5px solid green; */
+  stroke-width: 50px;
 }
 
 
